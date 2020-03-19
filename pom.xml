@@ -119,7 +119,7 @@
       <dependency>
         <artifactId>fastjson</artifactId>
         <groupId>com.alibaba</groupId>
-        <version>1.2.4</version>
+        <version>1.2.31</version>
       </dependency>
       <dependency>
         <artifactId>druid-spring-boot-starter</artifactId>
