@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns="http://maven.apache.org/POM/4.0.0"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <artifactId>seed-dubbo-consumer</artifactId>
+  <dependencies>
+    <dependency>
+      <artifactId>lombok</artifactId>
+      <groupId>org.projectlombok</groupId>
+    </dependency>
+    <!-- 引入spring-boot-starter以及dubbo和curator的依赖 -->
+    <dependency>
+      <artifactId>dubbo-spring-boot-starter</artifactId>
+      <groupId>org.apache.dubbo</groupId>
+    </dependency>
+    <!-- Spring Boot相关依赖 -->
+    <dependency>
+      <artifactId>spring-boot-starter</artifactId>
+      <groupId>org.springframework.boot</groupId>
+    </dependency>
+
+    <dependency>
+      <artifactId>spring-boot-starter-test</artifactId>
+      <groupId>org.springframework.boot</groupId>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <artifactId>spring-boot-starter-web</artifactId>
+      <groupId>org.springframework.boot</groupId>
+    </dependency>
+    <dependency>
+      <artifactId>seed-dubbo-api</artifactId>
+      <groupId>cn.chenyh</groupId>
+      <version>1.0.0</version>
+    </dependency>
+    <dependency>
+      <artifactId>springfox-swagger-ui</artifactId>
+      <groupId>io.springfox</groupId>
+    </dependency>
+    <dependency>
+      <artifactId>springfox-swagger2</artifactId>
+      <groupId>io.springfox</groupId>
+    </dependency>
+    <dependency>
+      <artifactId>dubbo-spring-boot-starter</artifactId>
+      <groupId>org.apache.dubbo</groupId>
+    </dependency>
+    <dependency>
+      <artifactId>dubbo</artifactId>
+      <groupId>org.apache.dubbo</groupId>
+    </dependency>
+    <dependency>
+      <artifactId>dubbo-dependencies-zookeeper</artifactId>
+      <groupId>org.apache.dubbo</groupId>
+      <type>pom</type>
+    </dependency>
+  </dependencies>
+
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <artifactId>seed-parent</artifactId>
+    <groupId>cn.chenyh</groupId>
+    <version>1.0.0</version>
+  </parent>
+
+</project>

@@ -1,0 +1,15 @@
+server:
+  port: 9003
+embedded:
+  zookeeper:
+    port: 2181
+chenyh:
+  service:
+    version: 1.0.0
+dubbo:
+  application:
+    name: iWorld
+  registry:
+    address: zookeeper://127.0.0.1:${embedded.zookeeper.port}
+  consumer:
+    check: false

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+  PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+  "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+  <context defaultModelType="flat" id="Mysql"
+    targetRuntime="MyBatis3Simple">
+    <javaClientGenerator targetPackage="${targetMapperPackage}"
+      targetProject="${targetJavaProject}" type="XMLMAPPER"/>
+    <javaModelGenerator targetPackage="${targetModelPackage}"
+      targetProject="${targetJavaProject}"/>
+    <jdbcConnection
+      connectionURL="jdbc:mysql://localhost:3306/seed?useSSL=true&amp;useUnicode=true&amp;characterEncoding=UTF8&amp;serverTimezone=UTC"
+      driverClass="com.mysql.cj.jdbc.Driver"
+      password="123456" userId="root">
+    </jdbcConnection>
+    <plugin type="tk.mybatis.mapper.generator.MapperPlugin">
+      <property name="mappers" value="tk.mybatis.mapper.cn.chenyh.cn.chenyh.common.Mapper"/>
+    </plugin>
+    <property name="javaFileEncoding" value="UTF-8"/>
+
+    <property name="beginningDelimiter" value="`"/>
+
+    <property name="endingDelimiter" value="`"/>
+
+    <property name="mergeable" value="false"></property>
+
+    <sqlMapGenerator targetPackage="${targetXMLPackage}"
+      targetProject="${targetResourcesProject}"/>
+
+    <table domainObjectName="Order" tableName="order_info"/>
+  </context>
+</generatorConfiguration>
