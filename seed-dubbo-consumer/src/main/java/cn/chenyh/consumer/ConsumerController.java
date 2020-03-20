@@ -28,6 +28,7 @@ public class ConsumerController {
   @ApiOperation("消费")
   @GetMapping("/{id}")
   public String consumer(@NotNull @PathVariable("id") String id) {
+    log.info("消费 进来了，进来了");
     return service.iWorld(id);
   }
 

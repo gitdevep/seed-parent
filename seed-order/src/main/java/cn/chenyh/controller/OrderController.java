@@ -2,8 +2,8 @@ package cn.chenyh.controller;
 
 import cn.chenyh.common.result.Response;
 import cn.chenyh.common.result.Result;
-import cn.chenyh.entity.Order;
 import cn.chenyh.service.OrderService;
+import cn.chenyh.vo.Order;
 import com.alibaba.fastjson.JSON;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;

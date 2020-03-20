@@ -1,6 +1,6 @@
 package cn.chenyh.mapper;
 
-import cn.chenyh.entity.Order;
+import cn.chenyh.vo.Order;
 import tk.mybatis.mapper.common.Mapper;
 
 @org.apache.ibatis.annotations.Mapper

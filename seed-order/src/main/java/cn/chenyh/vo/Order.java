@@ -1,4 +1,4 @@
-package cn.chenyh.entity;
+package cn.chenyh.vo;
 
 import cn.chenyh.common.utils.AbstractVo.Add;
 import cn.chenyh.common.utils.AbstractVo.Update;

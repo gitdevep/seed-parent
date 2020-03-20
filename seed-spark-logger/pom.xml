@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns="http://maven.apache.org/POM/4.0.0"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <artifactId>seed-spark-logger</artifactId>
+  <dependencies>
+    <dependency>
+      <artifactId>spark-core_2.11</artifactId>
+      <groupId>org.apache.spark</groupId>
+      <version>${spark.version}</version>
+    </dependency>
+    <dependency>
+      <artifactId>spark-sql_2.11</artifactId>
+      <groupId>org.apache.spark</groupId>
+      <version>${spark.version}</version>
+    </dependency>
+    <dependency>
+      <artifactId>spark-streaming_2.11</artifactId>
+      <groupId>org.apache.spark</groupId>
+      <version>${spark.version}</version>
+    </dependency>
+    <dependency>
+      <artifactId>scala-library</artifactId>
+      <groupId>org.scala-lang</groupId>
+      <version>${scala.version}</version>
+    </dependency>
+    <dependency>
+      <artifactId>spark-hive_2.11</artifactId>
+      <groupId>org.apache.spark</groupId>
+      <version>${spark.version}</version>
+    </dependency>
+    <!--    <dependency>-->
+    <!--      <groupId>org.apache.kafka</groupId>-->
+    <!--      <artifactId>kafka-clients</artifactId>-->
+    <!--    </dependency>-->
+    <dependency>
+      <artifactId>kafka-clients</artifactId>
+      <groupId>org.apache.kafka</groupId>
+      <version>0.10.2.1</version>
+    </dependency>
+    <dependency>
+      <artifactId>spark-streaming-kafka-0-10_2.11</artifactId>
+      <groupId>org.apache.spark</groupId>
+      <version>${spark.version}</version>
+    </dependency>
+  </dependencies>
+
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <artifactId>seed-parent</artifactId>
+    <groupId>cn.chenyh</groupId>
+    <version>1.0.0</version>
+  </parent>
+
+  <properties>
+    <scala.version>2.11.8</scala.version>
+    <spark.version>2.1.1</spark.version>
+  </properties>
+
+</project>

@@ -1,7 +1,7 @@
 package cn.chenyh.service;
 
-import cn.chenyh.entity.Order;
 import cn.chenyh.mapper.OrderMapper;
+import cn.chenyh.vo.Order;
 import java.util.List;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;

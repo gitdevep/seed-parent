@@ -16,3 +16,13 @@ dubbo:
     address: zookeeper://127.0.0.1:${embedded.zookeeper.port}
   application:
     name: iWorld
+
+spring:
+  kafka:
+    bootstrap-servers: localhost:9092
+    producer:
+      retries: 0
+      batch-size: 16384
+      buffer-memory: 3554432
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer

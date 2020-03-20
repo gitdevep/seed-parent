@@ -13,6 +13,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @EnableSwagger2
 @EnableDubbo
 @SpringBootApplication
+//@EnableKafka
 public class ConsumerApplication {
 
   public static void main(String[] args) {

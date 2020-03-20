@@ -56,8 +56,15 @@
       <groupId>org.apache.dubbo</groupId>
       <type>pom</type>
     </dependency>
+    <dependency>
+      <artifactId>spring-kafka</artifactId>
+      <groupId>org.springframework.kafka</groupId>
+    </dependency>
+    <dependency>
+      <artifactId>kafka-clients</artifactId>
+      <groupId>org.apache.kafka</groupId>
+    </dependency>
   </dependencies>
-
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
